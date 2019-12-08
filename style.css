@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.cell {
+    background-color: rgb(202, 202, 202);
+    border: 0.5px solid rgb(27, 99, 255);
+}
+
+.cell.active {
+    background-color: rgb(27, 99, 255);
+}
+
+.cell.fading {
+    transition: background-color 1s;
+}
